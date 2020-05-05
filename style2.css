@@ -1,0 +1,250 @@
+/* Fonts */
+@font-face{
+    font-family: 'HelveticaNeue Light';
+    src: url(font/HelveticaNeue\ Light.ttf);
+}
+
+@font-face{
+    font-family: 'HelveticaNeue Bold';
+    src: url(font/Helvetica\ Neu\ Bold.ttf);
+}
+
+@font-face{
+    font-family: 'HelveticaNeue Thin';
+    src: url(font/HelveticaNeue\ Thin.ttf);
+}
+
+@font-face{
+    font-family: 'HelveticaNeue Medium';
+    src: url(font/HelveticaNeue\ Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Adobe Hebrew Regular';
+    src: url(font/Adobe\ Hebrew\ Regular.otf);
+}
+
+@font-face{
+    font-family: 'Adobe Hebrew Bold';
+    src: url(font/Adobe\ Hebrew\ Bold.otf);
+}
+
+/* Navbar */
+.menu{
+    padding-top: 20px;
+}
+
+nav img{
+    width: 70px;
+    height: 75px;
+    margin-right: 50px;
+    margin-left: 0px !important;
+}
+
+.nav-item{
+    color: black !important;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: #DCC367 !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.btn{
+    margin-top: 36px;
+}
+
+.tombol-login{
+    background-color: rgba(168, 131, 46, 0.5);
+    border: none;
+    height: 40px;
+    width: 100px;
+    margin-top: 32px;
+}
+
+.tombol-login-signup{
+    background-color: rgba(168, 131, 46, 0);
+    border: 1px solid rgba(168, 131, 46, 1) ;
+    height: 40px;
+    width: 100px;
+    margin-top: 32px;
+}
+
+.tombol-login p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #DCC367;
+    margin-top: 0px;
+    opacity: 100% !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    opacity: 100% !important;
+}
+
+.tombol-login-signup p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #DCC367;
+    margin-top: 0px;
+    opacity: 100% !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    opacity: 100% !important;
+}
+
+.parallax-container {
+    height: 230px;
+}
+
+
+.parallax img{
+    opacity: 0.9 !important;
+}
+
+.signup h1{
+    font-family: 'HelveticaNeue Thin';
+    margin-top: 0px;
+    margin-bottom: 5px !important;
+    font-size: 50px;
+    color: white;
+}
+
+.background-signup{
+    padding-top: 60px;
+    background-image: url(img/backsignup.png);
+    height: 1050px;
+}
+
+.background-signin{
+    padding-top: 100px;
+    background-image: url(img/backsignup.png);
+    height: 900px;
+}
+
+.card-panel{
+    background-color: rgba(50, 112, 122, 0.5);
+}
+
+.card-panel .signup{
+    min-height: 900px;
+}
+
+.card-panel .signin{
+    height: 650px;
+}
+
+.info-left h2{
+    font-size: 40px;
+    font-family: 'HelveticaNeue Light';
+    color: white;
+    text-align: left;
+}
+
+.info-left span{
+    font-family: 'HelveticaNeue Bold';
+    color: #A8832E;
+}
+
+.info-left h3{
+    font-family: 'HelveticaNeue Thin';
+    color: white;
+    font-size: 24px;
+}
+
+.info-right h2{
+    font-size: 30px;
+    font-family: 'HelveticaNeue Thin';
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info-right h3{
+    font-family: 'HelveticaNeue Thin';
+    font-size: 20px;
+    color: wheat;
+}
+
+select {
+    border: 10px solid white !important;
+}
+
+label{
+    color: black !important;
+}
+
+.input-field, label{
+    margin-top: 5px !important;
+    margin-bottom: 0px !important;
+}
+
+.tombol-signup{
+    margin-top: 5px !important;
+    background-color: #A8832E;
+}
+
+.tombol-sso-fb, .tombol-sso-gg, .tombol-sso-tw, .tombol-sso-gb{
+    width: 160px;
+    height: 40px;
+    color: black;
+    font-size: 15px;
+    font-family: 'HelveticaNeue Bold';
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background-color: white;
+    border-radius: 5px;
+    text-transform: none;
+}
+
+
+.tombol-sso-gg img{
+    width: 30px;
+    height: 24px;
+    margin-top: 6px;
+}
+
+.tombol-sso-fb img{
+    width: 18px;
+    height: 35px;
+    margin-top: 2px;
+}
+
+.tombol-sso-tw img{
+    width: 30px;
+    height: 24px;
+    margin-top: 6px;
+}
+
+.tombol-sso-gb{
+    width: 30px;
+    height: 24px;
+    margin-top: 6px;
+}
+
+.option-signin h4{
+    color: black;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.option-signin span{
+    font-family: 'HelveticaNeue Bold';
+}
+
+
+/* Footer */
+footer{
+    height: 60px;
+}
+
+footer h2{
+    font-family: 'HelveticaNeue Light';
+    font-size: 24px;
+    color: #A8832E;
+}

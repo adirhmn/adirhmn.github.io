@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PadiEmas | Sign In</title>
+  </head>
+
+  <body>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/jumbotron.jpg" class="signup"></div>
+
+      <!-- Navbar -->
+      <div class="container signup">
+        <div class="row">
+          <div class="col m8">
+            <nav class="transparent z-depth-0 menu">
+              <div class="nav-wrapper">
+                  <a href="#" class="brand-logo"><img src="img/logonav.png" alt="Logo"></a>
+                  <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><img src="img/logonav.png" alt="Logo"></li>
+                    <li><a class="nav-item first" href="index.html">Home</a></li>
+                    <li><a class="nav-item" href="">Profile</a></li>
+                    <li><a class="nav-item" href="">News</a></li>
+                    <li><a class="nav-item" href="">Event</a></li>
+                    <li><a class="nav-item" href="">Contact</a></li>
+                  </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="row center">
+            <div class="col m2">
+              <div class="btn tombol-login-signup">
+                <a href="signup.html"><p class="center">Sign Up</p></a>
+              </div>
+            </div>
+            <div class="col m2">
+              <div class="btn tombol-login">
+                <a href="signin.html"><p class="center">Login</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="signup">Sign In</h1>
+      </div>
+      
+    </div>
+
+
+    <!-- Sidenav -->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">Profile</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Event</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+
+    <!-- Background -->
+    <div class="background-signin">
+      <div class="container">
+        <div class="card-panel signin">
+          <div class="row center">
+            <div class="col m6 info-left">
+              <h2><span>Get</span> a Bigger <br>Chance to <span>Win!</span></h2>
+              <img src="img/gamer-win.png" alt="">
+            </div>
+            <div class="col m6 info-right">
+              <h2>Login</h2>
+              <h3>with your social network :</h3>
+              <div class="row center">
+                <div class="col s6">
+                  <a class="waves-effect waves-light btn tombol-sso-gg"><i class="left"><img src="img/google.png" alt=""></i>Google</a>
+                </div>
+                <div class="col s6">
+                  <a class="waves-effect waves-light btn tombol-sso-fb"><i class="left"><img src="img/facebook-2.png" alt=""></i>Facebook</a>
+                </div>
+              </div>
+              <div class="row center">
+                <div class="col s6">
+                  <a class="waves-effect waves-light btn tombol-sso-tw"><i class="left"><img src="img/twitter.png" alt=""></i>Twitter</a>
+                </div>
+                <div class="col s6">
+                  <a class="waves-effect waves-light btn tombol-sso-gg"><i class="left"><img src="img/github-logo.png" alt=""></i>Github</a>
+                </div>
+              </div>
+              <h3>------ or ------</h3>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="required validate">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">lock</i>
+                    <input id="password" type="password" class="required validate">
+                    <label for="password">Password</label>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="row left">
+                    <label>
+                      <input type="checkbox" />
+                      <span>Keep me signed in</span>
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn tombol-signup">Login</button>
+              </form>
+              <div class="option-signin">
+                <div class="row">
+                  <div class="col s12">
+                    <a href="signup.html"><h4>You don't have account? <span>Create now</span></h4></a>
+                    <a href=""><h4>Forget password?</h4></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h2 class="center">2020 All Rights Reserved by Padi</h2>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+      const sideNav= document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav);
+
+      const parallax=document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
+
+      const materialbox=document.querySelectorAll('.materialboxed');
+      M.Materialbox.init(materialbox);
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
+    </script>
+  </body>
+</html>
