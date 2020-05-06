@@ -267,7 +267,7 @@ label{
 }
 
 .infoweb{
-    height: 900px;
+    height: 1600px;
     margin-top: 0px;
 }
 
@@ -275,6 +275,7 @@ label{
     margin: 10px !important;
     font-family: 'HelveticaNeue Regular';
     font-size: 20px;
+    margin-bottom: 20px !important;
 }
 
 .infoweb h1{
@@ -289,6 +290,12 @@ label{
     font-family: 'HelveticaNeue Regular';
     font-size: 30px;
     color: black;
+}
+
+.background-infoweb{
+    padding-top: 60px;
+    background-image: url(img/backsignup.png);
+    height: 1650px;
 }
 /* Footer */
 footer{
