@@ -238,6 +238,58 @@ label{
 }
 
 
+/* Member Area */
+
+.welcoming{
+    height: 200px;
+    padding-top: 2px !important;
+}
+
+.welcoming h1{
+    font-family: 'HelveticaNeue Light';
+    font-size: 52px;
+}
+
+.tombol-jobs{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(168, 131, 46, 1);
+    width: 100px;
+    height: 80px;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.tombol-jobs p{
+    font-size: 20px;
+    margin-top: -3px;
+    color: #A8832E;
+    text-transform: none;
+}
+
+.infoweb{
+    height: 900px;
+    margin-top: 0px;
+}
+
+.infoweb p{
+    margin: 10px !important;
+    font-family: 'HelveticaNeue Regular';
+    font-size: 20px;
+}
+
+.infoweb h1{
+    margin: 10px !important;
+    font-family: 'HelveticaNeue Regular';
+    font-size: 34px;
+    color: black;
+}
+
+.infoweb h2{
+    margin: 10px !important;
+    font-family: 'HelveticaNeue Regular';
+    font-size: 30px;
+    color: black;
+}
 /* Footer */
 footer{
     height: 60px;

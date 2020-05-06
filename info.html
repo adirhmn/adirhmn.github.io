@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PadiEmas | Info</title>
+  </head>
+
+  <body>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/jumbotron.jpg" class="signup"></div>
+
+      <!-- Navbar -->
+      <div class="container signup">
+        <div class="row">
+          <div class="col m8">
+            <nav class="transparent z-depth-0 menu">
+              <div class="nav-wrapper">
+                  <a href="#" class="brand-logo"><img src="img/logonav.png" alt="Logo"></a>
+                  <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><img src="img/logonav.png" alt="Logo"></li>
+                    <li><a class="nav-item first" href="index.html">Home</a></li>
+                    <li><a class="nav-item" href="">Profile</a></li>
+                    <li><a class="nav-item" href="">News</a></li>
+                    <li><a class="nav-item" href="">Event</a></li>
+                    <li><a class="nav-item" href="info.html">Info</a></li>
+                  </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="row center">
+            <div class="col m2">
+              <div class="btn tombol-login-signup">
+                <a href="signup.html"><p class="center">Sign Up</p></a>
+              </div>
+            </div>
+            <div class="col m2">
+              <div class="btn tombol-login">
+                <a href="signin.html"><p class="center">Login</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="signup">Information About Web</h1>
+      </div>
+      
+    </div>
+
+
+    <!-- Sidenav -->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">Profile</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Event</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+
+    <!-- Background -->
+    <div class="background-signin">
+      <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel infoweb">
+                    <p>Pada halaman informasi mengenai web ini, akan saya jelaskan beberapa kesulitan dalam pembuatan website ini. </p>
+                    <h1>3 Elemen Paling Sulit Untuk diimplementasikan</h1>
+                    <p>Dalam mengerjakan web ini ada tiga elemen paling sulit yang menurut saya untuk diimplementasikan, diantaranya:</p>
+                    <h2>1. Membuat tombol sign up dan sign in pada navbar</h2>
+                    <p>Pada saat pengerjaan web ini awalnya saya merasa kesulitann untuk membuat tombol di bagian navbar dan meletakkannya di bagian paling kanaan. Saya sudah mencoba untuk memasukkan class button ke dalam list item pada nav, namun hasilnya belum sesuai seperti ekspetasi saya. </p>
+                    <h2>2. Membuat tulisan dengan dua font dan warna yang berbeda pada satu kalimat</h2>
+                    <p>Mockup ini diambil pada bagian halaman sign up. Kesulitan yang saya alami adalah ketika harus membuat kalimat dengan dua warna yang berbeda dan dua jenis font yang berbeda. </p>
+                    <h2>3. Membuat bagian informasi leaders</h2>
+                    <p>Pada bagian informasi leaders ini, saya kesulitan untuk membuat bagian tengah dimana membuat dua kalimat pada satu column saling berbeda posisi. Untuk leader di bagian atas kiri, sedangkan untuk vice leader di bagian bawah kiri. </p>
+                    <h1>1 Desain Elemen Yang Impossible</h1>
+                    <p>Saat mengerjakan web ini, saya merasa sangat kesulitan untuk membuat logo dan navbar saling bedampingan di bagian kiri. jika menggunakan pure navbar dari materialize, maka logo dan navbar akan saling tumpang tindih.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+      const sideNav= document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav);
+
+      const parallax=document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
+
+      const materialbox=document.querySelectorAll('.materialboxed');
+      M.Materialbox.init(materialbox);
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
+    </script>
+  </body>
+</html>
