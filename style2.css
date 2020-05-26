@@ -129,14 +129,14 @@ nav img{
 
 .background-signup{
     padding-top: 60px;
-    background-image: url(img/backsignup.png);
-    height: 1050px;
+    background-color: #F7FAFF;
+    height: 1800px;
 }
 
 .background-signin{
     padding-top: 100px;
-    background-image: url(img/backsignup.png);
-    height: 900px;
+    background-color: #F7FAFF;
+    height: 1300px;
 }
 
 .background-member-area{
@@ -187,6 +187,13 @@ nav img{
     font-family: 'HelveticaNeue Thin';
     font-size: 20px;
     color: wheat;
+}
+
+.info-right p{
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    color: green;
 }
 
 select {
@@ -1907,6 +1914,17 @@ footer h2{
         margin: 10px 0px 0px 0px;
         padding: 0px;
         font-size: 16px;
+    }
+
+    /* Signup Page */
+    .background-signup{
+        height: 1100px;
+        background-image: url(img/backsignup.png);
+    }
+
+    .background-signin{
+        height: 900px;
+        background-image: url(img/backsignup.png);
     }
 
 }

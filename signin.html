@@ -110,24 +110,6 @@
             </div>
             <div class="col m6 info-right">
               <h2>Login</h2>
-              <h3>with your social network :</h3>
-              <div class="row center">
-                <div class="col s6">
-                  <a class="waves-effect waves-light btn tombol-sso-gg"><i class="left"><img src="img/google.png" alt=""></i>Google</a>
-                </div>
-                <div class="col s6">
-                  <a class="waves-effect waves-light btn tombol-sso-fb"><i class="left"><img src="img/facebook-2.png" alt=""></i>Facebook</a>
-                </div>
-              </div>
-              <div class="row center">
-                <div class="col s6">
-                  <a class="waves-effect waves-light btn tombol-sso-tw"><i class="left"><img src="img/twitter.png" alt=""></i>Twitter</a>
-                </div>
-                <div class="col s6">
-                  <a class="waves-effect waves-light btn tombol-sso-gg"><i class="left"><img src="img/github-logo.png" alt=""></i>Github</a>
-                </div>
-              </div>
-              <h3>------ or ------</h3>
               <form id="form-login" class="col s12">
                 <div class="row">
                   <div class="input-field col s12">
@@ -216,7 +198,7 @@
           if(user_now[i]["Code Name"]==document.getElementById('username').value){
             if(user_now[i]["Password"]==document.getElementById('password').value){
               localStorage.setItem('active-user',document.getElementById('username').value);
-              localStorage.setItem('active-user',document.getElementById('username').value);
+              localStorage.setItem('active-user','member');
               btnLogin.setAttribute('href','member-dashboard.html');
             }
           }

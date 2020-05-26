@@ -218,16 +218,14 @@ nav img{
     background-color: #DEDEDE;
 }
 .carousel-item{
-    width: 600px !important;
-    height: 300px;
+    width: 350px !important;
+    height: 260px;
     background-color: white;
-    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    border: 1px solid silver; */
     padding: 10px 10px;
 }
 
 .carousel-item h6{
-    margin: 40px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     padding: 0px;
     font-family: 'HelveticaNeue Light';
     font-weight: 700;
@@ -258,9 +256,9 @@ nav img{
     border-bottom: steelblue !important;
     color: #327A70;
     text-align: center;
-    font-size: 32px;
+    font-size: 18px;
     font-family: 'HelveticaNeue Medium';
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .guild-information h3::after{
@@ -276,7 +274,7 @@ nav img{
 .guild-information h2{
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 72px;
+    font-size: 30px;
     font-family: 'HelveticaNeue Medium';
     margin-top: -10px;
 }
@@ -292,17 +290,17 @@ nav img{
 
 /* Introduction Guild */
 .background-1{
-    background-image: url(img/background.png);
-    height: 1860px;
-    padding-top: 115px;
+    background-color: #F7FAFF;
+    height: 1500px;
+    padding-top: 20px;
 }
 
 
 .introduce h2{
-    font-size: 52px;
+    font-size: 30px;
     font-family: 'Adobe Hebrew Bold';
     color: #DCC367;
-    margin-top: 110px !important;
+    margin-top: 20px !important;
     margin-bottom: 0px !important;
 }
 
@@ -311,8 +309,12 @@ nav img{
 
 }
 
+.introduce img{
+    width: 60%;
+}
+
 .introduce p{
-    font-size: 42px;
+    font-size: 20px;
     font-family: 'Adobe Hebrew Regular';
     color: #635216;
     margin: 0px !important;
@@ -321,8 +323,8 @@ nav img{
 /* About Us */
 .about h3, .leaders h3, .achievements h3, .socmed h3{
     font-family: 'HelveticaNeue Medium';
-    margin-top: 110px !important;
-    font-size: 32px;
+    margin-top: 20px !important;
+    font-size: 24px;
     color: #A8832E;
     border-bottom-color: brown;
     border-bottom: 20px !important;
@@ -330,7 +332,7 @@ nav img{
 
 .about p{
     font-family: 'HelveticaNeue Bold';
-    font-size: 26px;
+    font-size: 18px;
     color: black;
 }
 
@@ -355,10 +357,16 @@ nav img{
     margin-bottom: -8px;
 }
 
+.leaders img{
+    width: 80%;
+    margin-top: 20px;
+}
+
+
 .leaders h4{
     font-family: 'Adobe Hebrew Bold';
     color: #327A70;
-    font-size: 40px;
+    font-size: 20px;
     margin-bottom: 0px !important;
     margin-top: 0px !important;
 }
@@ -366,7 +374,7 @@ nav img{
 .leaders p{
     font-family: 'Adobe Hebrew Bold';
     color: #A8832E;
-    font-size: 30px;
+    font-size: 16px;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
@@ -393,7 +401,7 @@ nav img{
 
 .achievements h4{
     font-family: 'HelveticaNeue Medium';
-    font-size: 24px;
+    font-size: 18px;
     color: #327A70;
     margin-top: 14px !important;
     margin-left: 10px;
@@ -416,12 +424,13 @@ nav img{
 .background-2{
     background-image: url(img/backsocial.png);
     height: 450px;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .socmed h3{
     margin-top: 0px !important;
     margin-bottom: 40px;
+    font-size: 32px;
 }
 
 .socmed h3::after{
@@ -449,7 +458,7 @@ nav img{
 
 .socmed h4{
     font-family: 'HelveticaNeue Medium';
-    font-size: 22px;
+    font-size: 12px;
     color: #327A70;
     margin-top: 14px !important;
     margin-left: 10px;
@@ -466,4 +475,132 @@ footer h2{
     color: #A8832E;
 }
 
+/* Desktop Version */
+@media (min-width: 992px){
+
+    .background-1{
+        background-image: url(img/background.png);
+        height: 1860px;
+        padding-top: 115px;
+    }
+
+    /* Socmed */
+    .socmed h4{
+        font-size: 22px;
+        margin-top: 14px !important;
+        margin-left: 10px;
+    }
+
+    /* Carousel */
+    .carousel-item{
+        width: 600px !important;
+        height: 300px;
+        padding: 10px 10px;
+    }
+    
+    .carousel-item h6{
+        margin: 40px 0px 0px 0px;
+        padding: 0px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    .carousel-item h5{
+        margin: 10px 0px;
+        padding: 0px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    /* Achievements */
+    .achievements{
+        margin-top: -50px !important;
+    }
+
+    .achievements h4{
+        font-size: 24px;
+        margin-top: 14px !important;
+        margin-left: 10px;
+    }
+
+    .tombol-more{
+        font-size: 30px;
+        border-radius: 10px;
+        height: 60px;
+        width: 140px;
+        padding-top: 10px;
+    }
+
+    /* Leaders */
+
+    .leaders h4{
+        color: #327A70;
+        font-size: 40px;
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+    }
+
+    .leaders img{
+        width: 100%;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    
+    .leaders p{
+        color: #A8832E;
+        font-size: 30px;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .leaders .viceleader{
+        margin-top: -30px !important;
+    }
+    
+    /* About Us */
+    .about h3, .leaders h3, .achievements h3{
+        margin-top: 110px !important;
+        font-size: 32px;
+        border-bottom: 20px !important;
+    }
+
+    .about p{
+        font-size: 26px;
+    }
+
+    .about h3::after{
+        border-bottom: 3px solid #A8832E;
+        width: 60px;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    /* Introduction Guild */
+    .introduce h2{
+        font-size: 52px;
+        margin-top: 110px !important;
+        margin-bottom: 0px !important;
+    }
+    
+    .introduce p{
+        font-size: 42px;
+        margin: 0px !important;
+    }
+
+    /* Guild Information */
+    .guild-information h3{
+        font-size: 32px;
+        margin-top: 10px;
+    }
+    
+    .guild-information h3::after{
+        width: 40px;
+    }
+    
+    .guild-information h2{
+        font-size: 72px;
+    }
+    
+}
 

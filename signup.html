@@ -122,6 +122,9 @@
               <div class="row">
                 <a href="sso.html" class="waves-effect waves-light btn tombol-sso-gg"><i class="left"><img src="img/github-logo.png" alt=""></i>Github</a>
               </div>
+              <div class="row">
+                <a href="sso.html" class="waves-effect waves-light btn tombol-sso-gg"><i class="left"><img src="https://image.flaticon.com/icons/png/512/61/61109.png" alt=""></i>Linkedin</a>
+              </div>
             </div>
             <div class="col m6 info-right">
               <h2>Registration Form</h2>
@@ -164,40 +167,40 @@
                 </div>
                 <div class="row row-distance">
                   <div class="input-field col s12">
-                    <input id="address" type="text" class="validate">
+                    <input id="address" type="text" required class="validate">
                     <label for="address">Address</label>
                   </div>
                 </div>
                 <div class="row row-distance">
                   <div class="input-field col s6">
-                    <input id="dob" type="date" class="validate">
+                    <input id="dob" type="date" required class="validate">
                     <label for="dob">Date of Birth</label>
                   </div>
                   <div class="input-field col s6">
-                    <input id="identity_number" type="number" class="validate">
+                    <input id="identity_number" type="number" required class="validate">
                     <label for="identity_number">NIK/Identity Number</label>
                   </div>
                 </div>
                 <div class="row row-distance">
                   <div class="file-field input-field">
                     <div class="btn btn-upload">
-                      <span>File</span>
+                      <span>Upload KTP</span>
                       <input type="file">
                     </div>
                     <div class="file-path-wrapper">
-                      <input id="upload_ktp" class="file-path validate" type="text">
+                      <input id="upload_ktp" class="file-path validate" required type="text">
                     </div>
                   </div>
                 </div>
                 <div class="row row-distance">
                   <div class="input-field col s12">
-                    <input id="profession" type="text" class="validate">
+                    <input id="profession" type="text" required class="validate">
                     <label for="profession">Profession</label>
                   </div>
                 </div>
                 <div class="row row-distance">
                   <div class="input-field col s12">
-                    <textarea id="skillset" class="materialize-textarea"></textarea>
+                    <textarea id="skillset" required class="materialize-textarea"></textarea>
                     <label for="skillset">Skillset</label>
                   </div>
                 </div>
@@ -210,20 +213,27 @@
                 </div>
                 <div class="row row-distance">
                   <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
+                    <input id="telephone" type="number" class="validate">
+                    <label for="telephone">Telephone</label>
+                  </div>
+                </div>
+                <div class="row row-distance">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" required class="validate">
                     <label for="email">Email</label>
                   </div>
                 </div>
                 <div class="row row-distance">
                   <div class="input-field col s12">
-                    <input id="password" name="password" type="password" class="validate">
+                    <input id="password" name="password" type="password" required class="validate">
                     <label for="password">Password</label>
+                    <p>Recommendation :</p>
                     <progress max="100" value="0" id="strength" style="width: 230px; height: 5px;" class="left hide"></progress>
                   </div>
                 </div>
                 <div class="row row-distance">
                   <div class="input-field col s12">
-                    <input id="confirmpassword" name="confirm-password" type="password" class="validate">
+                    <input id="confirmpassword" name="confirm-password" type="password" required class="validate">
                     <label for="confirmpassword">Confirm Password</label>
                   </div>
                 </div>
@@ -468,6 +478,22 @@
     document.getElementById('email').value=profile.getEmail();
     gapi.auth2.getAuthInstance().signOut();
   }
+  </script>
+
+  <!-- Password Generator -->
+  <script>
+    function generatePassword() {
+      let length = 8,
+        charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+        retVal = "";
+      for (var i = 0, n = charset.length; i < length; ++i) {
+        retVal += charset.charAt(Math.floor(Math.random() * n));
+      }
+      return retVal;
+    }
+
+    const generatePass=generatePassword();
+    document.querySelector('.info-right p').innerHTML='Recommendation : '+generatePass;
   </script>
 
   </body>
