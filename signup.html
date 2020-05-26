@@ -461,5 +461,14 @@
     }
   </script>
 
+  <script>
+    function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    document.getElementById('first_name').value=profile.getName();
+    document.getElementById('email').value=profile.getEmail();
+    gapi.auth2.getAuthInstance().signOut();
+  }
+  </script>
+
   </body>
 </html>
