@@ -1,6 +1,6 @@
 if(localStorage.getItem('users')==null){
-    new User('Manajer', 'Unlimited', 'Adi', 'Rahman', 'admin', 'Jakarta', '09/08/2000', 135700002, 'Manajer', 'Hardworker', 08132145262, 'adi@gmail.com', 'admin');
-    new User('Manajer', 'Unlimited', 'Adi', 'Rahman', 'admin', 'Jakarta', '09/08/2000', 135700002, 'Manajer', 'Hardworker', 08132145262, 'adi@gmail.com', 'admin');
+    new User('Manajer', 'Unlimited', 'Adi', 'Rahman', 'admintry', 'Jakarta', '09/08/2000', 135700002, 'Manajer', 'Hardworker', 08132145262, 'adi@gmail.com', 'admin');
+    new User('Manajer', 'Unlimited', 'Adi', 'Rahman', 'admintry', 'Jakarta', '09/08/2000', 135700002, 'Manajer', 'Hardworker', 08132145262, 'adi@gmail.com', 'admin');
   }
 
 if(localStorage.getItem('active-user')==null){
