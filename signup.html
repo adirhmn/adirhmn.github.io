@@ -11,6 +11,7 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="google-signin-client_id" content="966551515564-s0k92khh47d526fg5kuagkf7u40fphju.apps.googleusercontent.com">
     <title>PadiEmas | Sign Up</title>
   </head>
 
@@ -110,7 +111,7 @@
               <img src="img/people.png" alt=""class="responsive-img" >
               <h3>Sign Up With :</h3>
               <div class="row">
-                <a href="sso.html" class="waves-effect waves-light btn tombol-sso-gg"><i class="left"><img src="img/google.png" alt=""></i>Google</a>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
               </div>
               <div class="row">
                 <a href="sso.html" class="waves-effect waves-light btn tombol-sso-fb"><i class="left"><img src="img/facebook-2.png" alt=""></i>Facebook</a>
@@ -242,6 +243,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/intlTelInput.js"></script>
     <script type="text/javascript" src="js/user.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <script>
       const sideNav= document.querySelectorAll('.sidenav');
