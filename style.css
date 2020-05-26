@@ -55,6 +55,15 @@ nav img{
     margin-top: 36px;
 }
 
+.btn-upload{
+    margin-top: 0px;
+}
+
+.row-distance{
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+
 .tombol-login{
     background-color: rgba(168, 131, 46, 0.5);
     border: none;
@@ -65,23 +74,10 @@ nav img{
 
 .tombol-login-signup{
     background-color: rgba(168, 131, 46, 0);
-    border: 1px solid #DCC367 ;
+    border: 1px solid rgba(168, 131, 46, 1) ;
     height: 40px;
     width: 100px;
     margin-top: 32px;
-}
-
-
-.tombol-login-signup p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: capitalize;
-    font-size: 16px;
-    color: #DCC367;
-    margin-top: 0px;
-    opacity: 100% !important;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    font-weight: 500;
-    opacity: 100% !important;
 }
 
 .tombol-login p{
@@ -96,6 +92,80 @@ nav img{
     opacity: 100% !important;
 }
 
+.tombol-login-signup p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #DCC367;
+    margin-top: 0px;
+    opacity: 100% !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    opacity: 100% !important;
+}
+
+/* Profile Navigation */
+.panel-profile{
+    height: 50px;
+    width: 170px;
+    border: 2px solid rgba(168, 131, 46, 1);
+    margin-top: 30px;
+}
+
+.panel-profile:hover{
+    background-color: rgba(168, 131, 46, 0.5);
+}
+
+.panel-profile img{
+    height: 40px;
+    width: 40px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.panel-profile h3{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: 'HelveticaNeue Light';
+    color: white;
+}
+
+.panel-profile i{
+    margin-top: 8px;
+    color: white;
+}
+
+
+.dropdown-content {
+    width: 180px !important;
+    top: 1px !important;
+    background-color: white;
+    margin-top: 60px !important;
+}
+
+.dropdown-content li{
+    height: 10px;
+    border-bottom: 1px solid rgba(168, 131, 46, 0.8);
+    background-color: white;
+}
+
+.dropdown-content li a{
+    color: #A8832E;
+    font-family: 'HelveticaNeue Thin';
+    font-size: 10px;
+}
+
+
+#first-menu{
+    margin-top: -30px;
+}
+
+#dropdown1{
+    margin-top: 30px !important;
+}
 
 /* Jumbotron */
 .jumbotron{
@@ -141,6 +211,39 @@ nav img{
     height: 60px;
     width: 200px;
     padding-top: 10px;
+}
+
+/* Carousel Tips */
+.tips-web{
+    background-color: #DEDEDE;
+}
+.carousel-item{
+    width: 600px !important;
+    height: 300px;
+    background-color: white;
+    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid silver; */
+    padding: 10px 10px;
+}
+
+.carousel-item h6{
+    margin: 40px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'HelveticaNeue Light';
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+.carousel-item h5{
+    margin: 10px 0px;
+    padding: 0px;
+    font-family: 'HelveticaNeue Light';
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: black;
 }
 
 /* Panel Guild Information */

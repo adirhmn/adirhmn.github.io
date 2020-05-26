@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome Admin | PadiEmas</title>
+
+  </head>
+
+  <body>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/jumbotron.jpg" class="signup"></div>
+
+      <!-- Navbar -->
+      <div class="container signup">
+        <div class="row">
+          <div class="col m8">
+            <nav class="transparent z-depth-0 menu">
+              <div class="nav-wrapper">
+                  <a href="#" class="brand-logo"><img src="img/logonav.png" alt="Logo"></a>
+                  <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><img src="img/logonav.png" alt="Logo"></li>
+                    <li><a class="nav-item first" href="index.html">Home</a></li>
+                    <li><a class="nav-item dropdown-trigger" data-target="dropdown2">Company</a></li>
+                    <ul class="dropdown-content" id="dropdown2">
+                      <li><a href="companyprofile.html">Profile</a></li>
+                      <li><a href="companystructure.html">Structure</a></li>
+                    </ul>
+                    <li><a class="nav-item" href="jobs.html">Job</a></li>
+                    <li><a class="nav-item" href="contact">Contact</a></li>
+                    <li><a class="nav-item dropdown-trigger" data-target="dropdown3">Others</a></li>
+                    <ul class="dropdown-content" id="dropdown3">
+                      <li><a href="info.html">dev_info</a></li>
+                      <li><a href="task.html">Assignment2_phase3</a></li>
+                    </ul>
+                  </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="row center">
+            <section id="button_nav" class="">
+              <div class="col m2">
+                <div class="btn tombol-login-signup">
+                  <a href="signup.html"><p class="center">Sign Up</p></a>
+                </div>
+              </div>
+              <div class="col m2">
+                <div class="btn tombol-login">
+                  <a href="signin.html"><p class="center">Login</p></a>
+                </div>
+              </div>
+            </section>
+            <div class="col m1"></div>
+            <section id="profile_nav" class="">
+              <div class="col m3 s5">
+                <a href="">
+                  <div class="panel-profile dropdown-trigger" data-target="dropdown1">
+                    <img src="img/viceleader.png" alt="" class="responsive-img left">
+                    <h3 class="left">Hello, Adi</h3>
+                    <i class="small material-icons">arrow_drop_down</i>
+                    <ul id='dropdown1' class='dropdown-content'>
+                      <li>
+                        <a href="" id="first-menu">My Profile <i class="small material-icons">person</i></a>
+                      </li>
+                      <li>
+                        <a href="">Dashboard <i class="small material-icons">dashboard</i></a>
+                      </li>
+                      <li>
+                        <a href="">Logout <i class="small material-icons">power_settings_new</i></a></a>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <h1 class="signup">Dashboard Admin</h1>
+      </div>
+      
+    </div>
+
+
+    <!-- Sidenav -->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">Profile</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Event</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+
+    <!-- Background -->
+    <div class="background-admin-dashboard">
+      <div class="row center member-area">
+        <div class="col m2 s2 left-panel">
+          <!-- Grey navigation panel -->
+          <div class="side-panel-navigation">
+            <div class="side-panel-navigation">
+              <div class="" id="side-dashboard">
+                <a href="admin-dashboard.html">
+                  <i class="small material-icons">dashboard</i>
+                  <h2>Dashboard</h2>
+                </a>
+              </div>
+              <div class="" id="side-profile">
+                <a href="admin-profile.html">
+                  <i class="small material-icons">person</i>
+                  <h2>Admin Profile</h2>
+                </a>
+              </div>
+              <div class="" id="side-progress">
+                <a href="admin-manageusers.html">
+                  <i class="small material-icons">group</i>
+                  <h2>Manage Users</h2>
+                </a>
+              </div>
+              <div class="" id="side-progress">
+                <a href="admin-managejobs.html">
+                  <i class="small material-icons">card_travel</i>
+                  <h2>Manage Jobs</h2>
+                </a>
+              </div>
+              <div class="" id="side-logout">
+                <a href="signin.html">
+                  <i class="small material-icons">power_settings_new</i>
+                <h2>logout</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col m10 s10">
+          <div id="title-list-users">
+            <h1>Manage Jobs</h1>
+          </div>
+
+          <div class="panel-data-jobs">
+            <div class="col s6">
+              <div class="col">
+                <h4>Jobs</h4>
+              </div>
+              <div class="col">
+                <p>4,034 total</p>
+              </div>
+              <div class="col">
+                <p>Sort By: <span>deadline</span></p>
+              </div>
+              
+            </div>
+            <div class="col s6">
+              <div class="col right">
+                <a href="" class="btn"><i class="material-icons left">filter_list</i>Filter</a>
+                <a href="" class="btn"><i class="material-icons left">group_add</i>Add Job</a>
+              </div>
+            </div>
+
+            <div class="table-data-users">
+              <div class="row">
+                <div class="col m12 s12">
+                  <table>
+                    <thead>
+                      <tr>
+                          <th>Title</th>
+                          <th>Posted by</th>
+                          <th>Deadline</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <td>Drive vehicles for 60 minutes</td>
+                        <td>@fika.01</td>
+                        <td>28/09/2020</td>
+                        <td class="text-job-available">Available</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Kill 2 players using a pan in Solos</td>
+                        <td>@adi.47</td>
+                        <td>28/09/2020</td>
+                        <td class="text-job-available">Available</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Use an adrenaline syringe</td>
+                        <td>@alvin.lapian</td>
+                        <td>27/09/2020</td>
+                        <td class="text-job-taken">Taken</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Kill at least 1 player by punching, and die by getting punched</td>
+                        <td>@chelsea</td>
+                        <td>26/09/2020</td>
+                        <td class="text-job-available">Available</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Be among the final 2 players in a Solo game</td>
+                        <td>@andre.heb</td>
+                        <td>26/09/2020</td>
+                        <td class="text-job-available">Available</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Reach top 5 10 times in Squad</td>
+                        <td>@al.fachri</td>
+                        <td>26/09/2020</td>
+                        <td class="text-job-taken">Taken</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Knock down enemies 50 times</td>
+                        <td>@azofrangga</td>
+                        <td>25/09/2020</td>
+                        <td class="text-job-taken">Taken</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Restore 200 health using any healing items</td>
+                        <td>@ferryhasan</td>
+                        <td>25/09/2020</td>
+                        <td class="text-job-finished">Finished</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Play on Miramar for 3 hours or more</td>
+                        <td>@admin</td>
+                        <td>24/09/2020</td>
+                        <td class="text-job-finished">Finished</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Heal for 300 HP total</td>
+                        <td>@admin</td>
+                        <td>22/09/2020</td>
+                        <td class="text-job-finished">Finished</td>
+                        <td>
+                          <a href="" class="btn-detail">Detail</a>
+                          <a href="" class="btn-delete">Delete</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div> 
+        </div>
+
+  
+      </div>
+    </div>
+
+    <footer>
+      <h2 class="center">2020 All Rights Reserved by Padi</h2>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+
+    <script>
+      const sideNav= document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav);
+
+      const parallax=document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
+
+      const materialbox=document.querySelectorAll('.materialboxed');
+      M.Materialbox.init(materialbox);
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
+    </script>
+
+    <!-- Script for Tabs and Dropdown Profile -->
+    <script>
+      const tabs=document.querySelectorAll('.tabs');
+      M.Tabs.init(tabs);
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+      });
+
+      const btnUpgrade=document.querySelector('.content-ranks-profile button');
+      const textUpgrade= document.querySelector('.content-ranks-profile .text-upgrade');
+      const textUp=document.getElementById('text-upgrade');
+      textUpgrade.addEventListener('click', function(){
+        textUp.removeAttribute('href');
+        textUpgrade.classList.add('hide');
+        btnUpgrade.classList.remove('hide');
+      })
+    </script>
+
+  </body>
+</html>

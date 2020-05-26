@@ -10,7 +10,8 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PadiEmas | Info</title>
+    <title>Welcome Admin | PadiEmas</title>
+
   </head>
 
   <body>
@@ -84,7 +85,7 @@
           </div>
         </div>
 
-        <h1 class="signup">Information About Web</h1>
+        <h1 class="signup">Member Area</h1>
       </div>
       
     </div>
@@ -100,37 +101,100 @@
     </ul>
 
     <!-- Background -->
-    <div class="background-infoweb">
-      <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <div class="card-panel infoweb">
-                    <p>Pada halaman informasi mengenai web ini, akan saya jelaskan beberapa kesulitan dalam pembuatan website ini. </p>
-                    <h1>3 Elemen Paling Sulit Untuk diimplementasikan</h1>
-                    <p>Dalam mengerjakan web ini ada tiga elemen paling sulit yang menurut saya untuk diimplementasikan, diantaranya:</p>
-                    <h2>1. Membuat tombol sign up dan sign in pada navbar</h2>
-                    <img src="img/1.JPG" alt=""class="responsive-img">
-                    <p>Pada saat pengerjaan web ini awalnya saya merasa kesulitann untuk membuat tombol di bagian navbar dan meletakkannya di bagian paling kanaan. Saya sudah mencoba untuk memasukkan class button ke dalam list item pada nav, namun hasilnya belum sesuai seperti ekspetasi saya. </p>
-                    <h2>2. Membuat tulisan dengan dua font dan warna yang berbeda pada satu kalimat</h2>
-                    <img src="img/2.JPG" alt="" class="responsive-img">
-                    <p>Mockup ini diambil pada bagian halaman sign up. Kesulitan yang saya alami adalah ketika harus membuat kalimat dengan dua warna yang berbeda dan dua jenis font yang berbeda. </p>
-                    <h2>3. Membuat bagian informasi leaders</h2>
-                    <img src="img/3.JPG" alt="" class="responsive-img">
-                    <p>Pada bagian informasi leaders ini, saya kesulitan untuk membuat bagian tengah dimana membuat dua kalimat pada satu column saling berbeda posisi. Untuk leader di bagian atas kiri, sedangkan untuk vice leader di bagian bawah kiri. </p>
-                    <h1>1 Desain Elemen Yang Impossible</h1>
-                    <img src="img/4.JPG" alt="" class="responsive-img">
-                    <p>Saat mengerjakan web ini, saya merasa sangat kesulitan untuk membuat logo dan navbar saling bedampingan di bagian kiri. jika menggunakan pure navbar dari materialize, maka logo dan navbar akan saling tumpang tindih.</p>
-                </div>
+    <div class="background-admin-profile">
+      <div class="row center member-area">
+        <div class="col m2 s2 left-panel">
+          <!-- Grey navigation panel -->
+          <div class="side-panel-navigation-profile">
+            <div class="" id="side-dashboard">
+              <a href="member-dashboard.html">
+                <i class="small material-icons">dashboard</i>
+                <h2>Dashboard</h2>
+              </a>
             </div>
+            <div class="" id="side-profile">
+              <a href="member-profile.html">
+                <i class="small material-icons">person</i>
+                <h2>Profile</h2>
+              </a>
+            </div>
+            <div class="" id="side-progress">
+              <a href="#!">
+                <i class="small material-icons">equalizer</i>
+                <h2>Progress</h2>
+              </a>
+            </div>
+            <div class="" id="side-logout">
+              <a href="signin.html">
+                <i class="small material-icons">power_settings_new</i>
+                <h2>logout</h2>
+              </a>
+            </div>
+          </div>
         </div>
+  
+        <div class="col m10 s10">
+          <div id="title-list-users">
+            <h1>My Profile</h1>
+          </div>
+
+          <div class="myprofile-panel-top">
+            <div class="row">
+              <div class="col m3 s3">
+                <img src="img/jumbotron.jpg" alt="">
+              </div>
+              <div class="col m6 s6">
+                <h2>Fachri Ghani</h2>
+                <h3>@al.fachri</h4>
+                <h4>Member</h3>
+              </div>
+              <div class="col m2 s2">
+                <div class="myprofile-panel-rank">
+                  <h5>Rank</h5>
+                  <h6>Honor I</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="myprofile-panel-bottom">
+            <div class="row">
+              <div class="col m6 s6">
+                <h4>Account Created</h4>
+                <h5>26/03/2020</h5>
+                <h4>Join Period</h4>
+                <h5>12-Month</h5>
+                <h4>Date of Birth</h4>
+                <h5>26/08/2000</h5>
+                <h4>Profession</h4>
+                <h5>Youtuber</h5>
+                <h4>Email</h4>
+                <h5>alfachrixzs@gmail.com</h5>
+              </div>
+              <div class="col m6 s6">
+                <h4>Member Type</h4>
+                <h5>Member</h5>
+                <h4>Address</h4>
+                <h5>Jl. Kenangan II No.5, Jakarta Pusat</h5>
+                <h4>NIK</h4>
+                <h5>123577778877</h5>
+                <h4>Skillset</h4>
+                <h5>Teamwork, Adaptability, Creativity, Problem-solving</h5>
+                <h4>Password</h4>
+                <h5>*********</h5>
+              </div>
+              <Button class="btn">Change Data</Button>
+            </div>
+          </div> 
+        </div>
+
+  
       </div>
     </div>
 
     <footer>
-        <h2 class="center">2020 All Rights Reserved by Padi</h2>
+      <h2 class="center">2020 All Rights Reserved by Padi</h2>
     </footer>
-
-
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -150,11 +214,27 @@
         var elems = document.querySelectorAll('select');
         var instances = M.FormSelect.init(elems);
       });
+    </script>
+
+    <!-- Script for Tabs and Dropdown Profile -->
+    <script>
+      const tabs=document.querySelectorAll('.tabs');
+      M.Tabs.init(tabs);
 
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.dropdown-trigger');
         var instances = M.Dropdown.init(elems);
       });
+
+      const btnUpgrade=document.querySelector('.content-ranks-profile button');
+      const textUpgrade= document.querySelector('.content-ranks-profile .text-upgrade');
+      const textUp=document.getElementById('text-upgrade');
+      textUpgrade.addEventListener('click', function(){
+        textUp.removeAttribute('href');
+        textUpgrade.classList.add('hide');
+        btnUpgrade.classList.remove('hide');
+      })
     </script>
+
   </body>
 </html>

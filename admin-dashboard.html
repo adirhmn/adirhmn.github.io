@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome Admin | PadiEmas</title>
+
+  </head>
+
+  <body>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/jumbotron.jpg" class="signup"></div>
+
+      <!-- Navbar -->
+      <div class="container signup">
+        <div class="row">
+          <div class="col m8">
+            <nav class="transparent z-depth-0 menu">
+              <div class="nav-wrapper">
+                  <a href="#" class="brand-logo"><img src="img/logonav.png" alt="Logo"></a>
+                  <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><img src="img/logonav.png" alt="Logo"></li>
+                    <li><a class="nav-item first" href="index.html">Home</a></li>
+                    <li><a class="nav-item dropdown-trigger" data-target="dropdown2">Company</a></li>
+                    <ul class="dropdown-content" id="dropdown2">
+                      <li><a href="companyprofile.html">Profile</a></li>
+                      <li><a href="companystructure.html">Structure</a></li>
+                    </ul>
+                    <li><a class="nav-item" href="jobs.html">Job</a></li>
+                    <li><a class="nav-item" href="contact">Contact</a></li>
+                    <li><a class="nav-item dropdown-trigger" data-target="dropdown3">Others</a></li>
+                    <ul class="dropdown-content" id="dropdown3">
+                      <li><a href="info.html">dev_info</a></li>
+                      <li><a href="task.html">Assignment2_phase3</a></li>
+                    </ul>
+                  </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="row center">
+            <section id="button_nav" class="">
+              <div class="col m2">
+                <div class="btn tombol-login-signup">
+                  <a href="signup.html"><p class="center">Sign Up</p></a>
+                </div>
+              </div>
+              <div class="col m2">
+                <div class="btn tombol-login">
+                  <a href="signin.html"><p class="center">Login</p></a>
+                </div>
+              </div>
+            </section>
+            <div class="col m1"></div>
+            <section id="profile_nav" class="">
+              <div class="col m3 s5">
+                <a href="">
+                  <div class="panel-profile dropdown-trigger" data-target="dropdown1">
+                    <img src="img/viceleader.png" alt="" class="responsive-img left">
+                    <h3 class="left">Hello, Adi</h3>
+                    <i class="small material-icons">arrow_drop_down</i>
+                    <ul id='dropdown1' class='dropdown-content'>
+                      <li>
+                        <a href="" id="first-menu">My Profile <i class="small material-icons">person</i></a>
+                      </li>
+                      <li>
+                        <a href="">Dashboard <i class="small material-icons">dashboard</i></a>
+                      </li>
+                      <li>
+                        <a href="">Logout <i class="small material-icons">power_settings_new</i></a></a>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <h1 class="signup">Dashboard Admin</h1>
+      </div>
+      
+    </div>
+
+
+    <!-- Sidenav -->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">Profile</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Event</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+
+    <!-- Background -->
+    <div class="background-admin-dashboard">
+      <div class="row center member-area">
+        <div class="col m2 s2 left-panel">
+          <!-- Grey navigation panel -->
+          <div class="side-panel-navigation">
+            <div class="side-panel-navigation">
+              <div class="" id="side-dashboard">
+                <a href="admin-dashboard.html">
+                  <i class="small material-icons">dashboard</i>
+                  <h2>Dashboard</h2>
+                </a>
+              </div>
+              <div class="" id="side-profile">
+                <a href="admin-profile.html">
+                  <i class="small material-icons">person</i>
+                  <h2>Admin Profile</h2>
+                </a>
+              </div>
+              <div class="" id="side-progress">
+                <a href="admin-manageusers.html">
+                  <i class="small material-icons">group</i>
+                  <h2>Manage Users</h2>
+                </a>
+              </div>
+              <div class="" id="side-progress">
+                <a href="admin-managejobs.html">
+                  <i class="small material-icons">card_travel</i>
+                  <h2>Manage Jobs</h2>
+                </a>
+              </div>
+              <div class="" id="side-logout">
+                <a href="signin.html">
+                  <i class="small material-icons">power_settings_new</i>
+                <h2>logout</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col m7 s7">
+          <div class="row">
+            <div class="col m4 s12">
+              <ul id="admin-info-user-1" class="collection info-web">
+                <li class="collection-item">Total User Registered</li>
+                <li class="collection-item">2,150</li>
+              </ul>
+            </div>
+
+            <div id="admin-info-user-2" class="col m4 s12">
+              <ul class="collection info-web">
+                <li class="collection-item">Total Job Posted</li>
+                <li class="collection-item">160</li>
+              </ul>
+            </div>
+
+            <div id="admin-info-user-3" class="col m4 s12">
+              <ul class="collection info-web">
+                <li class="collection-item">Total Visitor Web</li>
+                <li class="collection-item">5,234</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row message-report">
+            <div class="col m6 s12">
+              <div class="row">
+                <div class="col m6 s6">
+                  <a href="">
+                    <div class="message-info">
+                      <div class="row">
+                        <i class="material-icons">markunread</i>
+                        <p >Message</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col m6 s6">
+                  <a href="">
+                    <div class="report-info">
+                      <div class="row">
+                        <i class="material-icons">timeline</i>
+                        <p >Reports</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m12 s12">
+                  <div class="demands-rank">
+                    <h4>Request For Upgrade Rank</h4>
+                    <ul>
+                      <li>
+                        <div class="item-demand">
+                          <div class="col s4">
+                            <img src="https://image.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" alt="">
+                          </div>
+                          <div class="col s8">
+                            <h5>panji</h5>
+                            <p>From <span>Beginner I</span> to <span>Madya V</span></p>
+                            <a href="" class="left">Review</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-demand">
+                          <div class="col s4">
+                            <img src="https://img.freepik.com/free-photo/mand-holding-cup_1258-340.jpg?size=626&ext=jpg" alt="">
+                          </div>
+                          <div class="col s8">
+                            <h5>bintang</h5>
+                            <p>From <span>Madya I</span> to <span>Honor V</span></p>
+                            <a href="" class="left">Review</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-demand">
+                          <div class="col s4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg" alt="">
+                          </div>
+                          <div class="col s8">
+                            <h5>falaxh</h5>
+                            <p>From <span>Beginner II</span> to <span>Beginner I</span></p>
+                            <a href="" class="left">Review</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-demand">
+                          <div class="col s4">
+                            <img src="https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859" alt="">
+                          </div>
+                          <div class="col s8">
+                            <h5>dee</h5>
+                            <p>From <span>Madya II</span> to <span>Madya I</span></p>
+                            <a href="" class="left">Review</a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="" class="right">See All</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col m6 s12">
+              <div class="admin-top-member">
+                <h4>Top Members Of The Week</h4>
+                <ul class="left">
+                  <li>
+                    <a href="">
+                      <div class="item-top-member">
+                        <img class="left" src="img/leader.png" alt="">
+                        <p class="left">@setiadi23</p>
+                        <i class="small material-icons right">keyboard_arrow_right</i>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="item-top-member">
+                        <img class="left" src="img/leader.png" alt="">
+                        <p class="left">@haikal</p>
+                        <i class="small material-icons right">keyboard_arrow_right</i>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="item-top-member">
+                        <img class="left" src="img/leader.png" alt="">
+                        <p class="left">@proplayer</p>
+                        <i class="small material-icons right">keyboard_arrow_right</i>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="item-top-member">
+                        <img class="left" src="img/leader.png" alt="">
+                        <p class="left">@darris48</p>
+                        <i class="small material-icons right">keyboard_arrow_right</i>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="item-top-member">
+                        <img class="left" src="img/leader.png" alt="">
+                        <p class="left">@duatujuh</p>
+                        <i class="small material-icons right">keyboard_arrow_right</i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m3 s3">
+          <div class="user-panel-profile">
+            <div class="col m2 s2">
+              <i class="material-icons">notifications_none</i>
+            </div>
+            <div class="col m6 s10">
+              <h4>Adi Rahman</h4>
+              <h5>@adminadi</h5>
+              <h5>Super Admin</h5>
+            </div>
+            <div class="col m4 s4">
+              <img src="img/leader.png" alt="">
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <footer>
+      <h2 class="center">2020 All Rights Reserved by Padi</h2>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+
+    <script>
+      const sideNav= document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav);
+
+      const parallax=document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
+
+      const materialbox=document.querySelectorAll('.materialboxed');
+      M.Materialbox.init(materialbox);
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
+    </script>
+
+    <!-- Script for Tabs and Dropdown Profile -->
+    <script>
+      const tabs=document.querySelectorAll('.tabs');
+      M.Tabs.init(tabs);
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+      });
+
+      const btnUpgrade=document.querySelector('.content-ranks-profile button');
+      const textUpgrade= document.querySelector('.content-ranks-profile .text-upgrade');
+      const textUp=document.getElementById('text-upgrade');
+      textUpgrade.addEventListener('click', function(){
+        textUp.removeAttribute('href');
+        textUpgrade.classList.add('hide');
+        btnUpgrade.classList.remove('hide');
+      })
+    </script>
+
+  </body>
+</html>

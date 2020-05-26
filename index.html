@@ -21,32 +21,66 @@
         <div class="col m8">
           <nav class="transparent z-depth-0 menu">
             <div class="nav-wrapper">
-              <a href="#" class="brand-logo"><img src="img/logonav.png" alt="Logo"></a>
-              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul id="nav-mobile" class="hide-on-med-and-down">
-                <li><img src="img/logonav.png" alt="Logo"></li>
-                <li><a class="nav-item first" href="index.html">Home</a></li>
-                <li><a class="nav-item" href="">Profile</a></li>
-                <li><a class="nav-item" href="">News</a></li>
-                <li><a class="nav-item" href="">Event</a></li>
-                <li><a class="nav-item" href="info.html">Info</a></li>
-              </ul>
+                <a href="#" class="brand-logo"><img src="img/logonav.png" alt="Logo"></a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="hide-on-med-and-down">
+                  <li><img src="img/logonav.png" alt="Logo"></li>
+                  <li><a class="nav-item first" href="index.html">Home</a></li>
+                  <li><a class="nav-item dropdown-trigger" data-target="dropdown2">Company</a></li>
+                  <ul class="dropdown-content" id="dropdown2">
+                    <li><a href="companyprofile.html">Profile</a></li>
+                    <li><a href="companystructure.html">Structure</a></li>
+                  </ul>
+                  <li><a class="nav-item" href="jobs.html">Job</a></li>
+                  <li><a class="nav-item" href="contact">Contact</a></li>
+                  <li><a class="nav-item dropdown-trigger" data-target="dropdown3">Others</a></li>
+                  <ul class="dropdown-content" id="dropdown3">
+                    <li><a href="info.html">dev_info</a></li>
+                    <li><a href="task.html">Assignment2_phase3</a></li>
+                  </ul>
+                </ul>
             </div>
           </nav>
         </div>
         <div class="row center">
-          <div class="col m2">
-            <div class="btn tombol-login-signup">
-              <a href="signup.html"><p class="center">Sign Up</p></a>
+          <section id="button_nav" class="">
+            <div class="col m2">
+              <div class="btn tombol-login-signup">
+                <a href="signup.html"><p class="center">Sign Up</p></a>
+              </div>
             </div>
-          </div>
-          <div class="col m2">
-            <div class="btn tombol-login">
-              <a href="signin.html"><p class="center">Login</p></a>
+            <div class="col m2">
+              <div class="btn tombol-login">
+                <a href="signin.html"><p class="center">Login</p></a>
+              </div>
             </div>
-          </div>
+          </section>
+          <div class="col m1"></div>
+          <section id="profile_nav" class="">
+            <div class="col m3 s5">
+              <a href="">
+                <div class="panel-profile dropdown-trigger" data-target="dropdown1">
+                  <img src="img/viceleader.png" alt="" class="responsive-img left">
+                  <h3 class="left">Hello, Adi</h3>
+                  <i class="small material-icons">arrow_drop_down</i>
+                  <ul id='dropdown1' class='dropdown-content'>
+                    <li>
+                      <a href="" id="first-menu">My Profile <i class="small material-icons">person</i></a>
+                    </li>
+                    <li>
+                      <a href="">Dashboard <i class="small material-icons">dashboard</i></a>
+                    </li>
+                    <li>
+                      <a href="">Logout <i class="small material-icons">power_settings_new</i></a></a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </section>
         </div>
       </div>
+
     </div>
 
     <!-- Sidenav -->
@@ -95,9 +129,11 @@
       </div>
     </div>
 
+
     <div class="background-1">
       <!-- Introduction Guild -->
       <div class="container">
+
         <section class="introduce">
           <div class="row">
             <div class="col m6 s12 center">
@@ -185,6 +221,48 @@
       </div>
     </div>
 
+    <section class="tips-web">
+      <div class="carousel">
+        <a class="carousel-item" href="#one!">
+          <h6>Join Guild</h6>
+          <h5>To be able to join the PadiEmas guild is very easy. You 
+            only need to fill in the registration form at adirhmn.github.io/signup. 
+            After that, you can log in with the username (codename) and password that 
+            was created earlier.
+          </h5>
+        </a>
+        <a class="carousel-item" href="#two!">
+          <h6>Criteria of Accepted Jobs</h6>
+          <h5>For jobs to be available for approval, your account ranking must meet the 
+            minimum requirements specified. to find out the minimum requirements, you can 
+            visit adirhmn.github.io/jobs and look at the list of jobs.
+          </h5>
+        </a>
+        <a class="carousel-item" href="#three!">
+          <h6>Criteria of Minimum Acceptable Rewards</h6>
+          <h5>To get the award as expected, you must carry out 
+            the work as requested. for example, if you are asked to drive a car within 2 hours, 
+            you must be able to drive a car for at least 2 hours to get a reward.</h5>
+        </a>
+        <a class="carousel-item" href="#three!">
+          <h6>Benefits of Early Members</h6>
+          <h5>Each member has benefits according to his current ranking. the higher your ranking, 
+            the more job offers are shown to you. in addition, requests for ranking upgrades will 
+            become faster.</h5>
+        </a>
+        <a class="carousel-item" href="#three!">
+          <h6>Jobs Workflow</h6>
+          <h5>After you take the job, you must complete the work in accordance with the specified time. 
+            In this condition, you cannot post any jobs. You can post the job again right after you finish 
+            the previous job and get a reward.</h5>
+        </a>
+        <a class="carousel-item" href="#three!">
+          <h6>Membership Ranks and Criteria</h6>
+          <h5>A description of the memberships and criteria can be seen at adirhmn.github.io/memberships</h5>
+        </a>
+      </div>
+    </section>
+
     <div class="background-2">
       <div class="container">
         <!-- Social Media -->
@@ -224,6 +302,7 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
 
     <script>
       const sideNav= document.querySelectorAll('.sidenav');
@@ -234,6 +313,18 @@
 
       const materialbox=document.querySelectorAll('.materialboxed');
       M.Materialbox.init(materialbox);
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems,{
+          'indicators' : true
+        });
+      });
     </script>
   </body>
 </html>

@@ -10,7 +10,8 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PadiEmas | Info</title>
+    <title>Member Area | PadiEmas</title>
+
   </head>
 
   <body>
@@ -84,7 +85,7 @@
           </div>
         </div>
 
-        <h1 class="signup">Information About Web</h1>
+        <h1 class="signup">Member Area</h1>
       </div>
       
     </div>
@@ -100,37 +101,113 @@
     </ul>
 
     <!-- Background -->
-    <div class="background-infoweb">
-      <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <div class="card-panel infoweb">
-                    <p>Pada halaman informasi mengenai web ini, akan saya jelaskan beberapa kesulitan dalam pembuatan website ini. </p>
-                    <h1>3 Elemen Paling Sulit Untuk diimplementasikan</h1>
-                    <p>Dalam mengerjakan web ini ada tiga elemen paling sulit yang menurut saya untuk diimplementasikan, diantaranya:</p>
-                    <h2>1. Membuat tombol sign up dan sign in pada navbar</h2>
-                    <img src="img/1.JPG" alt=""class="responsive-img">
-                    <p>Pada saat pengerjaan web ini awalnya saya merasa kesulitann untuk membuat tombol di bagian navbar dan meletakkannya di bagian paling kanaan. Saya sudah mencoba untuk memasukkan class button ke dalam list item pada nav, namun hasilnya belum sesuai seperti ekspetasi saya. </p>
-                    <h2>2. Membuat tulisan dengan dua font dan warna yang berbeda pada satu kalimat</h2>
-                    <img src="img/2.JPG" alt="" class="responsive-img">
-                    <p>Mockup ini diambil pada bagian halaman sign up. Kesulitan yang saya alami adalah ketika harus membuat kalimat dengan dua warna yang berbeda dan dua jenis font yang berbeda. </p>
-                    <h2>3. Membuat bagian informasi leaders</h2>
-                    <img src="img/3.JPG" alt="" class="responsive-img">
-                    <p>Pada bagian informasi leaders ini, saya kesulitan untuk membuat bagian tengah dimana membuat dua kalimat pada satu column saling berbeda posisi. Untuk leader di bagian atas kiri, sedangkan untuk vice leader di bagian bawah kiri. </p>
-                    <h1>1 Desain Elemen Yang Impossible</h1>
-                    <img src="img/4.JPG" alt="" class="responsive-img">
-                    <p>Saat mengerjakan web ini, saya merasa sangat kesulitan untuk membuat logo dan navbar saling bedampingan di bagian kiri. jika menggunakan pure navbar dari materialize, maka logo dan navbar akan saling tumpang tindih.</p>
-                </div>
+    <div class="background-admin-dashboard">
+      <div class="row center member-area">
+        <div class="col m2 s2 left-panel">
+          <!-- Grey navigation panel -->
+          <div class="side-panel-navigation">
+            <div class="side-panel-navigation">
+              <div class="" id="side-dashboard">
+                <a href="member-dashboard.html">
+                  <i class="small material-icons">dashboard</i>
+                  <h2>Dashboard</h2>
+                </a>
+              </div>
+              <div class="" id="side-profile">
+                <a href="member-profile.html">
+                  <i class="small material-icons">person</i>
+                  <h2>Profile</h2>
+                </a>
+              </div>
+              <div class="" id="side-progress">
+                <a href="#!">
+                  <i class="small material-icons">equalizer</i>
+                  <h2>Progress</h2>
+                </a>
+              </div>
+              <div class="" id="side-logout">
+                <a href="signin.html">
+                  <i class="small material-icons">power_settings_new</i>
+                  <h2>logout</h2>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
+  
+        <div class="col m10 s10">
+          <div id="title-list-users">
+            <h1>Upgrade Rank</h1>
+          </div>
+
+          <div class="formupgrade-panel-top">
+            <h3>
+              Congratulations, your account has the opportunity to 
+              be upgraded and enjoy better service. please fill in the 
+              following form correctly.</h3>
+          </div>
+
+          <div class="formupgrade-panel-bottom">
+            <div class="container">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="full_name" type="text" class="validate" required>
+                    <label for="full_name">Full Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <select required>
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="Bv">Beginner V</option>
+                      <option value="BIV">Beginner IV</option>
+                      <option value="BIII">Beginner III</option>
+                      <option value="BII">Beginner II</option>
+                      <option value="BI">Beginner I</option>
+                      <option value="MIII">Madya III</option>
+                      <option value="MII">Madya II</option>
+                      <option value="MI">Madya I</option>
+                      <option value="HIII">Honor III</option>
+                      <option value="HII">Honor II</option>
+                      <option value="HI">Honor I</option>
+                    </select>
+                    <label>Rank Currently</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="password" type="password" class="validate" required>
+                    <label for="password">Password</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <p>
+                    <label>
+                      <input type="checkbox" required />
+                      <span>I have read terms and conditions. if I violate, I am ready to accept the consequences.</span>
+                    </label>
+                  </p>
+                </div>
+                <a href="" class="btn">Submit</a>
+              </form>
+              <h5 class="hide">Please wait, our team will review your account within 2x24 hours</h5>
+            </div>
+          </div> 
+        </div>
+        
       </div>
     </div>
 
     <footer>
-        <h2 class="center">2020 All Rights Reserved by Padi</h2>
+      <h2 class="center">2020 All Rights Reserved by Padi</h2>
     </footer>
-
-
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -150,11 +227,29 @@
         var elems = document.querySelectorAll('select');
         var instances = M.FormSelect.init(elems);
       });
+    </script>
+
+    <!-- Script for Tabs and Dropdown Profile -->
+    <script>
+      const tabs=document.querySelectorAll('.tabs');
+      M.Tabs.init(tabs);
 
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.dropdown-trigger');
         var instances = M.Dropdown.init(elems);
       });
+
+      const subFormUp=document.querySelector('.formupgrade-panel-bottom a');
+      const textWait=document.querySelector('.formupgrade-panel-bottom h5');
+      subFormUp.addEventListener('click', function(){
+        subFormUp.removeAttribute('href');
+        textWait.classList.remove('hide');
+        document.getElementById('full_name').value='';
+        document.getElementById('email').value='';
+        document.getElementById('password').value='';
+      });
+
     </script>
+
   </body>
 </html>
