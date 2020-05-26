@@ -198,7 +198,7 @@
           if(user_now[i]["Code Name"]==document.getElementById('username').value){
             if(user_now[i]["Password"]==document.getElementById('password').value){
               localStorage.setItem('active-user',document.getElementById('username').value);
-              localStorage.setItem('active-user','member');
+              localStorage.setItem('active-user',document.getElementById('username').value);
               btnLogin.setAttribute('href','member-dashboard.html');
             }
           }
