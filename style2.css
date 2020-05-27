@@ -1449,6 +1449,24 @@ tr:hover{
     background-color: #A8832E;
 }
 
+/* Task Page */
+.info-task h2{
+    margin: 20px 10px 20px 10px;
+    font-family: 'HelveticaNeue Thin';
+    font-weight: 600;
+    font-size: 26px;
+    border-left: 2px solid green;
+    padding-left: 14px;
+    background-color: honeydew;
+}
+
+.info-task p{
+    margin: 20px 10px 20px 10px;
+    font-family: 'HelveticaNeue Thin';
+    font-weight: 600;
+    font-size: 20px;
+}
+
 /* Footer */
 footer{
     height: 60px;
