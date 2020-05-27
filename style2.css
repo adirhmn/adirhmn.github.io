@@ -1467,6 +1467,18 @@ tr:hover{
     font-size: 20px;
 }
 
+.note-task{
+    width: 40%;
+    background-color: khaki;
+}
+
+.note-task p{
+    margin: 20px 10px 20px 10px;
+    font-family: 'HelveticaNeue Thin';
+    font-weight: 600;
+    font-size: 20px;
+}
+
 /* Footer */
 footer{
     height: 60px;
