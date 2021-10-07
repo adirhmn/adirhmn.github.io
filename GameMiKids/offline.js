@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1624783658,
+	"version": 1633581158,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -61,6 +61,9 @@
 		"images/anakbaik2-sheet0.png",
 		"images/anakbaik3-sheet0.png",
 		"images/mulaikegame-sheet0.png",
+		"images/tiledbackground.png",
+		"images/boxsampahnonorganik-sheet0.png",
+		"images/coinrp-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
